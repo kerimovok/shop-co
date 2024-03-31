@@ -7,10 +7,25 @@
     gap: 10%;
     border-radius: 20px;
 
+    @include responsive(large) {
+        margin-block: auto;
+        width: 80%;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    @include responsive(medium) {
+        padding: 20px;
+    }
+
     h2 {
         font-size: 40px;
         line-height: 45px;
         width: 60%;
+
+        @include responsive(large) {
+            font-size: 32px;
+        }
     }
     form {
         @extend %flex-column-center;
