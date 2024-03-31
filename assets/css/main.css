@@ -175,14 +175,14 @@ h6 {
   transition: all 0.3s ease;
 }
 
-section#new-arrivals .container .items .item .price span, section#new-arrivals .container .items .item .rating, section#new-arrivals .container .items, section#hero .container .stats, section#hero .container button, header .container .actions, header .container nav ul, header .container, .remainder .container i, #scroll-up {
+section#top-selling .container .items .item .price span, section#top-selling .container .items .item .rating, section#top-selling .container .items, section#new-arrivals .container .items .item .price span, section#new-arrivals .container .items .item .rating, section#new-arrivals .container .items, section#hero .container .stats, section#hero .container button, header .container .actions, header .container nav ul, header .container, .remainder .container i, #scroll-up {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 }
 
-section#new-arrivals .container .items .item {
+section#top-selling .container .items .item, section#new-arrivals .container .items .item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -631,6 +631,88 @@ section#new-arrivals .container .items .item .price s {
   color: rgb(153, 153, 153);
 }
 section#new-arrivals .container .items .item .price span {
+  border-radius: 62px;
+  width: 58px;
+  height: 28px;
+  font-size: 12px;
+  line-height: 16px;
+  background: rgba(255, 51, 51, 0.102);
+  color: #ff3333;
+}
+
+section#top-selling .container {
+  padding-block: 72px;
+  text-align: center;
+}
+section#top-selling .container h2 {
+  font-size: 48px;
+  line-height: 57px;
+  margin-bottom: 55px;
+}
+section#top-selling .container .items {
+  gap: 16px;
+  flex-wrap: wrap;
+}
+section#top-selling .container .items .item {
+  align-items: flex-start;
+  text-align: left;
+}
+section#top-selling .container .items .item .img {
+  width: 270px;
+  height: 270px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+section#top-selling .container .items .item .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+section#top-selling .container .items .item .img img:hover {
+  transform: scale(1.1);
+}
+section#top-selling .container .items .item a.title {
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 700;
+  margin-top: 16px;
+}
+section#top-selling .container .items .item .rating {
+  margin-top: 6px;
+}
+section#top-selling .container .items .item .rating .stars i {
+  font-size: 14px;
+  color: #ffc633;
+}
+section#top-selling .container .items .item .rating span {
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.6);
+}
+section#top-selling .container .items .item .rating span strong {
+  color: black;
+}
+section#top-selling .container .items .item .price {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+  align-items: center;
+}
+section#top-selling .container .items .item .price p {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+section#top-selling .container .items .item .price s {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: rgb(153, 153, 153);
+}
+section#top-selling .container .items .item .price span {
   border-radius: 62px;
   width: 58px;
   height: 28px;
