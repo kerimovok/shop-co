@@ -1,0 +1,87 @@
+section#new-arrivals {
+    .container {
+        padding-block: 72px;
+        text-align: center;
+
+        h2 {
+            font-size: 48px;
+            line-height: 57px;
+            margin-bottom: 55px;
+        }
+
+        .items {
+            @extend %flex-row-center;
+            gap: 16px;
+            flex-wrap: wrap;
+
+            .item {
+                @extend %flex-column-center;
+                align-items: flex-start;
+                text-align: left;
+                .img {
+                    @include size(270px);
+                    overflow: hidden;
+                    border-radius: 20px;
+                    img {
+                        @include img($scaleOnHover: true);
+                    }
+                }
+
+                a.title {
+                    font-size: 20px;
+                    line-height: 27px;
+                    font-weight: 700;
+                    margin-top: 16px;
+                }
+
+                .rating {
+                    @extend %flex-row-center;
+                    margin-top: 6px;
+                    .stars {
+                        i {
+                            font-size: 14px;
+                            color: #ffc633;
+                        }
+                    }
+
+                    span {
+                        font-size: 14px;
+                        line-height: 19px;
+                        color: rgba(0, 0, 0, 0.6);
+                        strong {
+                            color: black;
+                        }
+                    }
+                }
+
+                .price {
+                    display: flex;
+                    gap: 10px;
+                    margin-top: 8px;
+                    align-items: center;
+                    p {
+                        font-size: 24px;
+                        font-weight: 700;
+                        line-height: 32px;
+                    }
+                    s {
+                        font-size: 24px;
+                        font-weight: 700;
+                        line-height: 32px;
+                        color: rgb(153, 153, 153);
+                    }
+                    span {
+                        @extend %flex-row-center;
+                        border-radius: 62px;
+                        width: 58px;
+                        height: 28px;
+                        font-size: 12px;
+                        line-height: 16px;
+                        background: rgba(255, 51, 51, 0.102);
+                        color: #ff3333;
+                    }
+                }
+            }
+        }
+    }
+}

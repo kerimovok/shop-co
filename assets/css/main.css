@@ -175,11 +175,18 @@ h6 {
   transition: all 0.3s ease;
 }
 
-section#hero .container .stats, section#hero .container button, header .container .actions, header .container nav ul, header .container, .remainder .container i, #scroll-up {
+section#new-arrivals .container .items .item .price span, section#new-arrivals .container .items .item .rating, section#new-arrivals .container .items, section#hero .container .stats, section#hero .container button, header .container .actions, header .container nav ul, header .container, .remainder .container i, #scroll-up {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+}
+
+section#new-arrivals .container .items .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 section#brands .container {
@@ -547,5 +554,88 @@ section#brands {
 }
 section#brands .container {
   flex-wrap: wrap;
+  gap: 16px;
   padding-block: 42px;
+}
+
+section#new-arrivals .container {
+  padding-block: 72px;
+  text-align: center;
+}
+section#new-arrivals .container h2 {
+  font-size: 48px;
+  line-height: 57px;
+  margin-bottom: 55px;
+}
+section#new-arrivals .container .items {
+  gap: 16px;
+  flex-wrap: wrap;
+}
+section#new-arrivals .container .items .item {
+  align-items: flex-start;
+  text-align: left;
+}
+section#new-arrivals .container .items .item .img {
+  width: 270px;
+  height: 270px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+section#new-arrivals .container .items .item .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+section#new-arrivals .container .items .item .img img:hover {
+  transform: scale(1.1);
+}
+section#new-arrivals .container .items .item a.title {
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 700;
+  margin-top: 16px;
+}
+section#new-arrivals .container .items .item .rating {
+  margin-top: 6px;
+}
+section#new-arrivals .container .items .item .rating .stars i {
+  font-size: 14px;
+  color: #ffc633;
+}
+section#new-arrivals .container .items .item .rating span {
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.6);
+}
+section#new-arrivals .container .items .item .rating span strong {
+  color: black;
+}
+section#new-arrivals .container .items .item .price {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+  align-items: center;
+}
+section#new-arrivals .container .items .item .price p {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+section#new-arrivals .container .items .item .price s {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: rgb(153, 153, 153);
+}
+section#new-arrivals .container .items .item .price span {
+  border-radius: 62px;
+  width: 58px;
+  height: 28px;
+  font-size: 12px;
+  line-height: 16px;
+  background: rgba(255, 51, 51, 0.102);
+  color: #ff3333;
 }/*# sourceMappingURL=main.css.map */

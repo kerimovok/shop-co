@@ -4,7 +4,7 @@ section#brands {
     .container {
         @extend %flex-row-between;
         flex-wrap: wrap;
-
+        gap: 16px;
         padding-block: 42px;
     }
 }
