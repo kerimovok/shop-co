@@ -7,6 +7,10 @@ section#browse {
             font-size: 48px;
             line-height: 57px;
             margin-bottom: 55px;
+
+            @include responsive(large) {
+                font-size: 32px;
+            }
         }
 
         .styles {
@@ -16,6 +20,15 @@ section#browse {
                 "party party gym";
             grid-template-rows: 300px 300px;
             gap: 20px;
+
+            @include responsive(large) {
+                grid-template-areas:
+                    "casual"
+                    "formal"
+                    "party"
+                    "gym";
+                grid-template-rows: repeat(4, 300px);
+            }
 
             div {
                 padding: 20px;

@@ -7,6 +7,10 @@ section#new-arrivals {
             font-size: 48px;
             line-height: 57px;
             margin-bottom: 55px;
+
+            @include responsive(large) {
+                font-size: 32px;
+            }
         }
 
         .items {

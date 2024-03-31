@@ -762,6 +762,12 @@ section#brands .container {
   gap: 16px;
   padding-block: 42px;
 }
+@media (max-width: 992px) {
+  section#brands .container {
+    justify-content: center;
+    gap: 32px;
+  }
+}
 
 section#new-arrivals .container {
   padding-block: 72px;
@@ -771,6 +777,11 @@ section#new-arrivals .container h2 {
   font-size: 48px;
   line-height: 57px;
   margin-bottom: 55px;
+}
+@media (max-width: 992px) {
+  section#new-arrivals .container h2 {
+    font-size: 32px;
+  }
 }
 section#new-arrivals .container .items {
   gap: 16px;
@@ -854,6 +865,11 @@ section#top-selling .container h2 {
   line-height: 57px;
   margin-bottom: 55px;
 }
+@media (max-width: 992px) {
+  section#top-selling .container h2 {
+    font-size: 32px;
+  }
+}
 section#top-selling .container .items {
   gap: 16px;
   flex-wrap: wrap;
@@ -936,11 +952,22 @@ section#browse .container h2 {
   line-height: 57px;
   margin-bottom: 55px;
 }
+@media (max-width: 992px) {
+  section#browse .container h2 {
+    font-size: 32px;
+  }
+}
 section#browse .container .styles {
   display: grid;
   grid-template-areas: "casual formal formal" "party party gym";
   grid-template-rows: 300px 300px;
   gap: 20px;
+}
+@media (max-width: 992px) {
+  section#browse .container .styles {
+    grid-template-areas: "casual" "formal" "party" "gym";
+    grid-template-rows: repeat(4, 300px);
+  }
 }
 section#browse .container .styles div {
   padding: 20px;

@@ -6,5 +6,10 @@ section#brands {
         flex-wrap: wrap;
         gap: 16px;
         padding-block: 42px;
+
+        @include responsive(large) {
+            justify-content: center;
+            gap: 32px;
+        }
     }
 }
