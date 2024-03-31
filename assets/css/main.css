@@ -175,7 +175,7 @@ h6 {
   transition: all 0.3s ease;
 }
 
-section#top-selling .container .items .item .price span, section#top-selling .container .items .item .rating, section#top-selling .container .items, section#new-arrivals .container .items .item .price span, section#new-arrivals .container .items .item .rating, section#new-arrivals .container .items, section#hero .container .stats, section#hero .container button, header .container .actions, header .container nav ul, header .container, .remainder .container i, #scroll-up {
+section#reviews .container .reviews .review .title i, section#reviews .container .reviews, section#top-selling .container .items .item .price span, section#top-selling .container .items .item .rating, section#top-selling .container .items, section#new-arrivals .container .items .item .price span, section#new-arrivals .container .items .item .rating, section#new-arrivals .container .items, section#hero .container .stats, section#hero .container button, header .container .actions, header .container nav ul, header .container, .remainder .container i, #scroll-up {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -801,4 +801,70 @@ section#browse .container .styles .gym {
 }
 section#browse .container .styles .gym:hover {
   background-size: 160%;
+}
+
+section#reviews .container {
+  padding-block: 72px;
+}
+section#reviews .container h2 {
+  font-size: 48px;
+  line-height: 57px;
+  margin-bottom: 55px;
+}
+section#reviews .container .arrows {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 16px;
+}
+section#reviews .container .arrows i {
+  display: flex;
+  align-items: center;
+  width: 20px;
+  cursor: pointer;
+}
+section#reviews .container .reviews {
+  flex-wrap: wrap;
+  gap: 32px;
+}
+section#reviews .container .reviews .review {
+  width: 350px;
+  border-radius: 20px;
+  padding: 28px 32px 28px 32px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+section#reviews .container .reviews .review .stars {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 6px;
+}
+section#reviews .container .reviews .review .stars i {
+  font-size: 14px;
+  color: #ffc633;
+}
+section#reviews .container .reviews .review .title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+section#reviews .container .reviews .review .title a {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+}
+section#reviews .container .reviews .review .title i {
+  width: 16px;
+  height: 16px;
+  background: #01ab31;
+  color: white;
+  border-radius: 50%;
+  font-size: 8px;
+}
+section#reviews .container .reviews .review p {
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.6);
 }/*# sourceMappingURL=main.css.map */
