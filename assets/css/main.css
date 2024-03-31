@@ -175,7 +175,7 @@ h6 {
   transition: all 0.3s ease;
 }
 
-section#reviews .container .reviews .review .title i, section#reviews .container .reviews, section#top-selling .container .items .item .price span, section#top-selling .container .items .item .rating, section#top-selling .container .items, section#new-arrivals .container .items .item .price span, section#new-arrivals .container .items .item .rating, section#new-arrivals .container .items, section#hero .container .stats, section#hero .container button, footer .container.bottom .options, footer .container .socials i, header .container .actions, header .container nav ul, header .container, .remainder .container i, #scroll-up {
+section#reviews .container .reviews .review .title i, section#reviews .container .reviews, section#top-selling .container .items .item .price span, section#top-selling .container .items .item .rating, section#top-selling .container .items, section#new-arrivals .container .items .item .price span, section#new-arrivals .container .items .item .rating, section#new-arrivals .container .items, section#hero .container .stats, section#hero .container button, footer .container.bottom .options, footer .container .socials i, header .container .actions, header .container nav ul, header .container div, header .container, .remainder .container i, #scroll-up {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -418,7 +418,15 @@ header .container {
   justify-content: space-between;
   align-items: center;
 }
-header .container .logo {
+@media (max-width: 760px) {
+  header .container {
+    justify-content: between;
+  }
+}
+header .container div {
+  gap: 15px;
+}
+header .container div .logo {
   font-family: "Integral CF", sans-serif;
   font-size: 32px;
   font-weight: 700;
@@ -467,6 +475,11 @@ header .container nav ul li.dropdown .dropdown-menu ul li a {
 header .container nav ul li.dropdown .dropdown-menu ul li:hover, header .container nav ul li.dropdown .dropdown-menu ul li.active {
   font-weight: 500;
 }
+@media (max-width: 992px) {
+  header .container nav {
+    display: none;
+  }
+}
 header .container .search {
   flex: 1;
   position: relative;
@@ -500,11 +513,24 @@ header .container .search i {
   font-size: 20px;
   color: rgba(0, 0, 0, 0.4);
 }
+@media (max-width: 992px) {
+  header .container .search {
+    display: none;
+  }
+}
 header .container .actions {
   gap: 14px;
 }
 header .container .actions img {
   cursor: pointer;
+}
+header .container .actions img:first-child {
+  display: none;
+}
+@media (max-width: 992px) {
+  header .container .actions img:first-child {
+    display: block;
+  }
 }
 
 footer {
@@ -612,6 +638,20 @@ section#hero {
   background-position: 90% 10% !important;
   background-color: #f2f0f1;
 }
+@media (max-width: 992px) {
+  section#hero {
+    background-image: none;
+  }
+}
+section#hero > img {
+  display: none;
+}
+@media (max-width: 992px) {
+  section#hero > img {
+    display: block;
+    width: 100%;
+  }
+}
 section#hero .container {
   position: relative;
   padding-block: 100px;
@@ -642,8 +682,18 @@ section#hero .container button {
   color: white;
   margin-bottom: 32px;
 }
+@media (max-width: 992px) {
+  section#hero .container button {
+    width: 100%;
+  }
+}
 section#hero .container .stats {
   gap: 32px;
+}
+@media (max-width: 992px) {
+  section#hero .container .stats {
+    flex-wrap: wrap;
+  }
 }
 section#hero .container .stats .stat {
   border-right: 1px solid rgba(0, 0, 0, 0.1);
@@ -673,11 +723,24 @@ section#hero .container .star__small {
   height: 56px;
   animation-delay: 300ms;
 }
+@media (max-width: 992px) {
+  section#hero .container .star__small {
+    top: 110%;
+    right: auto;
+    left: 5%;
+  }
+}
 section#hero .container .star__medium {
   top: 15%;
   right: 0;
   width: 100px;
   height: 100px;
+}
+@media (max-width: 992px) {
+  section#hero .container .star__medium {
+    top: 100%;
+    right: 5%;
+  }
 }
 
 @keyframes pulse {

@@ -10,6 +10,19 @@ section#hero {
     background-position: 90% 10% !important;
     background-color: #f2f0f1;
 
+    @include responsive(large) {
+        background-image: none;
+    }
+
+    > img {
+        display: none;
+
+        @include responsive(large) {
+            display: block;
+            width: 100%;
+        }
+    }
+
     .container {
         position: relative;
         padding-block: 100px;
@@ -42,11 +55,19 @@ section#hero {
             border-radius: 62px;
             color: white;
             margin-bottom: 32px;
+
+            @include responsive(large) {
+                width: 100%;
+            }
         }
 
         .stats {
             @extend %flex-row-center;
             gap: 32px;
+
+            @include responsive(large) {
+                flex-wrap: wrap;
+            }
 
             .stat {
                 border-right: 1px solid rgba(0, 0, 0, 0.1);
@@ -79,6 +100,12 @@ section#hero {
                 width: 56px;
                 height: 56px;
                 animation-delay: 300ms;
+
+                @include responsive(large) {
+                    top: 110%;
+                    right: auto;
+                    left: 5%;
+                }
             }
 
             &__medium {
@@ -86,6 +113,11 @@ section#hero {
                 right: 0;
                 width: 100px;
                 height: 100px;
+
+                @include responsive(large) {
+                    top: 100%;
+                    right: 5%;
+                }
             }
         }
     }

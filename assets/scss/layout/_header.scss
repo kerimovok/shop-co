@@ -15,10 +15,18 @@ header {
         justify-content: space-between;
         align-items: center;
 
-        .logo {
-            font-family: $font-family--IntegralCF;
-            font-size: 32px;
-            font-weight: 700;
+        @include responsive(medium) {
+            justify-content: between;
+        }
+
+        div {
+            @extend %flex-row-center;
+            gap: 15px;
+            .logo {
+                font-family: $font-family--IntegralCF;
+                font-size: 32px;
+                font-weight: 700;
+            }
         }
 
         nav {
@@ -75,6 +83,10 @@ header {
                     }
                 }
             }
+
+            @include responsive(large) {
+                display: none;
+            }
         }
 
         .search {
@@ -108,6 +120,10 @@ header {
                 font-size: 20px;
                 color: rgba(0, 0, 0, 0.4);
             }
+
+            @include responsive(large) {
+                display: none;
+            }
         }
 
         .actions {
@@ -116,6 +132,14 @@ header {
 
             img {
                 cursor: pointer;
+            }
+
+            img:first-child {
+                display: none;
+
+                @include responsive(large) {
+                    display: block;
+                }
             }
         }
     }
