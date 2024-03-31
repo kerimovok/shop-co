@@ -175,7 +175,7 @@ h6 {
   transition: all 0.3s ease;
 }
 
-section#reviews .container .reviews .review .title i, section#reviews .container .reviews, section#top-selling .container .items .item .price span, section#top-selling .container .items .item .rating, section#top-selling .container .items, section#new-arrivals .container .items .item .price span, section#new-arrivals .container .items .item .rating, section#new-arrivals .container .items, section#hero .container .stats, section#hero .container button, header .container .actions, header .container nav ul, header .container, .remainder .container i, #scroll-up {
+section#reviews .container .reviews .review .title i, section#reviews .container .reviews, section#top-selling .container .items .item .price span, section#top-selling .container .items .item .rating, section#top-selling .container .items, section#new-arrivals .container .items .item .price span, section#new-arrivals .container .items .item .rating, section#new-arrivals .container .items, section#hero .container .stats, section#hero .container button, footer .container.bottom .options, footer .container .socials i, header .container .actions, header .container nav ul, header .container, .remainder .container i, #scroll-up {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -189,7 +189,7 @@ section#top-selling .container .items .item, section#new-arrivals .container .it
   flex-direction: column;
 }
 
-section#brands .container {
+section#brands .container, footer .container.bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -505,6 +505,101 @@ header .container .actions {
 }
 header .container .actions img {
   cursor: pointer;
+}
+
+footer {
+  background: #f0f0f0;
+  padding-block: 75px;
+  margin-top: 100px;
+}
+footer .container:has(.banner) {
+  padding-block: 0;
+  position: relative;
+}
+footer .container:has(.banner) .banner {
+  position: absolute;
+  top: -150px;
+  left: auto;
+  right: auto;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-block: 75px;
+}
+footer .container .logo {
+  font-family: "Integral CF", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+footer .container p {
+  width: 248px;
+  height: 66px;
+  font-size: 14px;
+  line-height: 22px;
+  margin-block: 25px 35px;
+}
+footer .container .socials {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+footer .container .socials i {
+  background: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-size: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+footer .container .socials i:hover {
+  background: black;
+  color: white;
+  border: 1px solid black;
+}
+footer .container h6 {
+  font-family: Satoshi;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+}
+footer .container ul li {
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+footer .container ul li:hover {
+  font-weight: 500;
+}
+footer .container.bottom {
+  color: rgba(0, 0, 0, 0.6);
+  padding-block: 25px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+footer .container.bottom p {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 14px;
+  line-height: 18.9px;
+  text-wrap: nowrap;
+}
+footer .container.bottom .options {
+  gap: 12px;
+}
+footer .container.bottom .options img {
+  width: 46.61px;
+  height: 30.03px;
+  padding: 9.94px 7.17px 9.59px 6.91px;
+  border-radius: 5px;
+  background: white;
+  border: 0.2px solid rgb(214, 220, 229);
+  box-shadow: 0px 0.4482142925px 4.4821429253px 0px rgba(183, 183, 183, 0.08);
+  box-shadow: 0px 4.4821429253px 8.9642858505px 0px rgba(183, 183, 183, 0.08);
 }
 
 section#hero {
