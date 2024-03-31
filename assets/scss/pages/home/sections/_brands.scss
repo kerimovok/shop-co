@@ -1,0 +1,10 @@
+section#brands {
+    background-color: black;
+
+    .container {
+        @extend %flex-row-between;
+        flex-wrap: wrap;
+
+        padding-block: 42px;
+    }
+}
