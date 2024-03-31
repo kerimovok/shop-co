@@ -720,4 +720,85 @@ section#top-selling .container .items .item .price span {
   line-height: 16px;
   background: rgba(255, 51, 51, 0.102);
   color: #ff3333;
+}
+
+section#browse .container {
+  padding-block: 72px;
+  text-align: center;
+}
+section#browse .container h2 {
+  font-size: 48px;
+  line-height: 57px;
+  margin-bottom: 55px;
+}
+section#browse .container .styles {
+  display: grid;
+  grid-template-areas: "casual formal formal" "party party gym";
+  grid-template-rows: 300px 300px;
+  gap: 20px;
+}
+section#browse .container .styles div {
+  padding: 20px;
+  text-align: left;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+section#browse .container .styles div span {
+  display: block;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+section#browse .container .styles .casual {
+  grid-area: casual;
+  background-image: url("https://s3-alpha-sig.figma.com/img/e1b7/74ab/a32d9a769caba77c08e107a9198dcd6d?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MclbYNFuPAhaHOedJcuvy3gOg-2z6UFI4VsPsoQbwmXppOa1we-yyAIT5NMb-0E7s9~pt8sZhG8omYFVvf5ZMVB51KvtgsVPmJxpfWmpIUJs3krFYOqgAv2GGgawkrzMq~CXnRRHrlJBOvoRBc0ipRmgCnQNye7jCqrqY98d8AqUgZEC04hPJfdY9w4rT3WTDQJIhynHRDkBA0Yu37gP2lKvbBhnrb8-ETGJT~FTAqJJ4dOHPp3cCnBODidY47YCh2YPo7UTbkAOvPM0I~CxuuI61Ip3MqYGNw7ErLDn-lFdX4yGQO7~Kdc0XTFe--NPMnE4V8bacqhBm50wMZawzA__");
+  background-size: 200%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 50% 50%;
+  transform: scaleX(-1);
+}
+section#browse .container .styles .casual span {
+  transform: scaleX(-1);
+}
+section#browse .container .styles .casual:hover {
+  background-size: 210%;
+}
+section#browse .container .styles .formal {
+  grid-area: formal;
+  background-image: url("https://s3-alpha-sig.figma.com/img/e46e/d6ac/8bdbe2c750dcc6e834bf1d98a4a73b29?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OkxPhBuszObrUm4GYwzQncKMj96SJ~oUtipXev9gWI-ZOJC237AG-cUS-hq62bnt~eg6VGyQRY~2WGE4zrSKgUNBba~QiCideCBLqotZMJx6bTIAodwBK2-q8QHikgYrWerwIk~V3lKjGRu2Gul-MbcMAqYmxeNm41oC9NvQT6ibRNH21rV2~KT~Hp-bqO5s6~vSKEg2kvGuUu9jAC6AFVlTb98XsSkgjdJI6dDEF0gYzNauWp7jn8pJ3NNGCgQgYEfRhmoD3bL8hluojGL4uEla6c58gZP4~u3y2UgHz2iU2WW07VHpxdewFe~AX2iBA1BSgMo3DdOYVXJDn0Qr7w__");
+  background-size: 160%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: -30% 30%;
+}
+section#browse .container .styles .formal:hover {
+  background-size: 170%;
+}
+section#browse .container .styles .party {
+  grid-area: party;
+  background-image: url("https://s3-alpha-sig.figma.com/img/aa19/c69e/82cd85a823c989c1c8631bd976e2cbfb?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oR0ElkqSWMuf5hSONi9ed7dljXXFSoDtlSuasuhGyGbAm9MDvGjiTgBT1b7myr1vVA5VrwMnEgqIdMT1RCW~wvfxCa4QAsdASusVAk-6zzhnK-6TM0mPtcTB31zpqIILpxVrElbVeit5TxrfYsUELWaGdkruF6M82U0HtrdonH9cKvnJyXYiAu2y~ExlXCWHn2Jpiw1n~i5yDGW8V6hnlltYE04kMwW7nKUAuWWGTLWRBmAn0p4fQH2Ly~1vVxWD3iS09-kmDHfqCM-j9TERmqp0Dsb1GfCbkoNZbQ8XHYQE5ijFLKsYun3IkdA4SG4ZwhnjRtSTPevGdTlarpwqOA__");
+  background-size: 150%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 40% 40%;
+}
+section#browse .container .styles .party:hover {
+  background-size: 160%;
+}
+section#browse .container .styles .gym {
+  grid-area: gym;
+  background-image: url("https://s3-alpha-sig.figma.com/img/fce6/58e0/c17a220fe8bfb1126626f3ab58a761ec?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Vzq5ihriEb-XJYnowaJArFyLq-Za6uhAqMsuUtiZDT~aIhOAg8suXIg8V-X3K~Uytz0ntzziixmiFjTdZA4ILGd42bpdDn526oIroMHakT9eawMkDtU2mMwDZf7kOp3Ku5Hdx9bxHTRPMKmfyklUpjP5vOP1l3l0kPm69tD-xlk8~T2ojkwsckmWUUcRf0nXu2YQX6N8yi6hWq0v-W8IJoXhrGu8DfDg-qmd-88v9LZljoL5e4J8UcNEizXsfRDH5ppMt7NEz9P0estRaRl0~GA71sw0sMCOeoG9clkPG2SQYI5Sii-9PqDNxox0JiUEn5Ul5lSZdhiCVipo4qmAqA__");
+  background-size: 150%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 35% 35%;
+}
+section#browse .container .styles .gym:hover {
+  background-size: 160%;
 }/*# sourceMappingURL=main.css.map */
