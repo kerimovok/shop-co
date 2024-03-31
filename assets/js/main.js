@@ -9,4 +9,9 @@ $(document).ready(function () {
             $("#scroll-up").css("opacity", "0");
         }
     });
+
+    // REMAINDER
+    $("#close-remainder").on("click", function () {
+        $(".remainder").addClass("fadeOut");
+    });
 });
