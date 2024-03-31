@@ -1,6 +1,7 @@
 header {
     position: sticky;
     inset: 0 0 auto 0;
+    background-color: white;
 
     .container {
         @extend %flex-row-center;
@@ -28,8 +29,8 @@ header {
 
                 li.dropdown {
                     position: relative;
-                    &:hover {
-                        .dropdown-menu {
+                    a:hover {
+                        + .dropdown-menu {
                             opacity: 1;
                         }
                     }

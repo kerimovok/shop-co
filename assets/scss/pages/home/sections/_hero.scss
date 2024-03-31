@@ -1,0 +1,104 @@
+section#hero {
+    min-height: 80dvh;
+    @include bg-img(
+        "https://s3-alpha-sig.figma.com/img/b26f/ea69/ccfd8aa5825862cdb9604a4fb4930464?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=i561rub8s1KgwW~gWqTWIfwPIhe9vLoLSXC716s~mQHCZm1m3wydcZb6oLKAHW3tuVUB1mw97RouOGHkMmqJQFY8avM~cnUFaSH1Et-M3UXDWq54SGJ3r6mV3dTl197ip868gbrq5V6~Hli2qzRUUqWjFQi2xhuj7NgUbcHhKy1JGzBpbdW3B0QmVDGGW7ajG3apcvcDS8rydrbcTYnx2FfflNIUpSpCGNtL1lBl9dW5dXPLkH4mEEypVoKmp1fYDLtis-CpXI3-3s7xoAIkTwH6~BuERu1pWcd4sVajdGc4dNDBv0vUp-FT3mbIIYFQKR36AdTQ4vWKaELwCoXWuw__",
+        40%,
+        center,
+        no-repeat,
+        scroll
+    );
+    background-position: 90% 10% !important;
+    background-color: #f2f0f1;
+
+    .container {
+        position: relative;
+        padding-block: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100%;
+
+        h1 {
+            max-width: 577px;
+            font-size: 64px;
+            line-height: 64px;
+            margin-bottom: 32px;
+        }
+
+        p {
+            max-width: 545px;
+            font-size: 16px;
+            line-height: 22px;
+            color: rgba(0, 0, 0, 0.6);
+            margin-bottom: 32px;
+        }
+
+        button {
+            @extend %flex-row-center;
+            width: 210px;
+            height: 52px;
+            background: black;
+            border-radius: 62px;
+            color: white;
+            margin-bottom: 32px;
+        }
+
+        .stats {
+            @extend %flex-row-center;
+            gap: 32px;
+
+            .stat {
+                border-right: 1px solid rgba(0, 0, 0, 0.1);
+                padding-right: 32px;
+                span {
+                    font-size: 40px;
+                    font-weight: 700;
+                    line-height: 54px;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: rgba(0, 0, 0, 0.6);
+                }
+
+                &:last-child {
+                    border: none;
+                }
+            }
+        }
+
+        .star {
+            position: absolute;
+            animation: pulse 2s infinite;
+
+            &__small {
+                top: 50%;
+                right: 40%;
+                width: 56px;
+                height: 56px;
+                animation-delay: 300ms;
+            }
+
+            &__medium {
+                top: 15%;
+                right: 0;
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
